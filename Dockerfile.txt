@@ -1,0 +1,3 @@
+docker build -t user_db .
+
+docker run -d -p 5432:5432 --name userdb --network mynetwork user_db
